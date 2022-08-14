@@ -1,10 +1,14 @@
 import random
 
-r = random.randint(1, 100)
+start = int(input('請決定隨機範圍開始值: '))
+end = int(input('請決定隨機範圍結束值: '))
+
+r = random.randint(start, end)
 count = 0
 
+
 while True:
-	n = int(input('請猜一個界在1~100的數字: '))
+	n = int(input('請猜一個數字: '))
 	count += 1
 	if r == n:
 		print("恭喜猜對了!")
